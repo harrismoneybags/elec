@@ -1,3 +1,30 @@
-<h1>hello</h1>
+{% extends 'base.html'%}
 
-<p> is this thing on ? </p>
+{% block content %}
+
+
+<div class="carousel-inner">
+	<div class="carousel-item active">
+
+		<div class="overlay-image" style="background-image: url(static/images/thecover.png);"></div>
+		
+		
+		<div class="container-carouseltext">
+			<h1> Welcome to Harris Electrical Services</h1>
+			<h6> making your smart home and electrical dreams a reality</h6>
+		</div>
+	</div>
+</div>	
+		
+<br>
+
+
+<div class="text-lower-left">
+	<p>
+		Aviable for call out or appointment in both the sheffild and the Ripon area's
+	</p>	
+	<a class="btn btn-secondary" href="#">see map »</a>
+</div>
+		
+
+{% endblock%}
