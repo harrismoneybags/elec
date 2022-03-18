@@ -26,8 +26,8 @@
 
 }
 
-.overlay-image {
-	position: absolute;
+.overlay-image-home {
+	position:absolute;
 	bottom: 0;
 	top: 0;
 	left: 0;
@@ -35,9 +35,18 @@
 	background-size: cover ;
 	background-position: center;
 	opacity: 0.75;
-	
 
+}
 
+.overlay-image-EICR{
+	position:absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-size: cover ;
+	background-position: center;
+	opacity: 0.75
 }
 
 .text-lower-left{
@@ -45,4 +54,10 @@
 	float: left;
 	width: 25%;
 
+}
+
+.text-center{
+	
+	float: left;
+	width: 25%;
 }
