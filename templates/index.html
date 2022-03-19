@@ -11,26 +11,43 @@
 		
 		<div class="container-carouseltext">
 			<h1> Welcome to Harris Electrical Services</h1>
-			<h6> making your smart home and electrical dreams a reality</h6>
+			<h6> Making your smart home and electrical dreams a reality</h6>
 		</div>
 	</div>
 </div>	
 		
 <br>
+</br>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+     <div class="card" style="width: 100%; height: 100%;">
+
+      		<img src="{{url_for('static',filename='images/map.png')}}" class="card-img-top" alt="...">
+      		<div class="card-body">
+      			<h5 class="card-title">Based in Dishforth</h5>
+    			<p class="card-text">Available for callout or appointments</p>
+    			<a href="{{url_for('about') }}#contact" class="btn btn-primary">contact info</a>
+    		</div>
+		</div>
+    </div>
+    <div class="col">
+    	<div class="card" style="width: 100%; height: 250 px;">
+
+      		<img src="{{url_for('static',filename='images/eicr.jpeg')}}" class="card-img-top" alt="...">
+      		<div class="card-body">
+      			<h5 class="card-title">EICR from £70</h5>
+    			<p class="card-text">Starting at just £70 book yours today!</p>
+    			<a href="{{url_for('services') }}#EICR" class="btn btn-primary">Find out more?</a>
+  			</div>
+		</div>
+    </div>
+  </div>
 
 
-<div class="text-lower-left">
-	<p>
-		Aviable for call out or appointment in both the sheffild and the Ripon area's
-	</p>	
-	<a class="btn btn-secondary" href="#">see map »</a>
-</div>
 
-<div class="text-center">
-	<p>
-		EICR's from £70 
-	</p>	
-	<a class="btn btn-secondary" href="#"> see more!»</a>
-</div>		
 
 {% endblock%}
+
+

@@ -1,7 +1,5 @@
-.navbar {
-	background: #fff;
-	height: 55px;
-	box-shadow:0px 2px 5px #777;
+.navbar-brand {
+	padding-left: 50px;
 }
 
 .container-block{
@@ -27,7 +25,7 @@
 }
 
 .overlay-image-home {
-	position:absolute;
+	position:relative;
 	bottom: 0;
 	top: 0;
 	left: 0;
@@ -38,26 +36,17 @@
 
 }
 
-.overlay-image-EICR{
-	position:absolute;
-	bottom: 0;
-	top: 0;
-	left: 0;
-	right: 0;
-	background-size: cover ;
-	background-position: center;
-	opacity: 0.75
-}
 
-.text-lower-left{
+
+.card-eicr {
+	position: relative;
+	float: left;
 	padding-left: 50px;
-	float: left;
-	width: 25%;
-
 }
 
-.text-center{
-	
-	float: left;
-	width: 25%;
+.card-local{
+	position: relative;
+	float: right;
+	padding-right: 50px;
+
 }
