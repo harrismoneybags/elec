@@ -25,7 +25,7 @@
 }
 
 .overlay-image-home {
-	position:relative;
+	position:absolute;
 	bottom: 0;
 	top: 0;
 	left: 0;
