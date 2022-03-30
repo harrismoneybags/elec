@@ -16,10 +16,8 @@
     <link rel="shortcut icon" href="{{url_for('static',filename='images/thelogo.png')}}">
   </head>
   <body>
-
-  	<dev>
-      {% include 'navbar.html'%}	
-    </dev>
+    {% include 'navbar.html'%}	
+    
     <div>
   		{% block content %}
   		{% endblock%}

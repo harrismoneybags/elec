@@ -1,9 +1,43 @@
-.navbar-brand {
-	padding-left: 50px;
+.{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
 
-.container-block{
-	width: 100%;
+.nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color:#2C3539 ;
+}
+
+.nav-links{
+	display: flex;
+	width: 20%;
+	justify-content: space-around;
+
+}
+
+.nav-links a{
+	color: white;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: bold;
+} 
+.nav-links li {
+	list-style: none;
+}
+
+.burger div{
+	width: 25px;
+	height: 5px;
+	background-color: white;
+	margin: 5px;
+}
+
+.burger{
+	display: none ;
 }
 
 .carousel-item { 
@@ -49,4 +83,19 @@
 	float: right;
 	padding-right: 50px;
 
+}
+
+
+@media screen and (max-width:1024px){
+	
+.nav-links{
+	display: flex;
+	width: 50%;
+	justify-content: space-around;
+}
+
+@media screen and (max-width:768px){
+	body{
+		display: none;
+	}
 }
