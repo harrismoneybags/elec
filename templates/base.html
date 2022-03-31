@@ -13,11 +13,12 @@
 
 
     <title>Harris Electrical Services</title>
-    <link rel="shortcut icon" href="{{url_for('static',filename='images/thelogo.png')}}">
+    <link rel="shortcut icon" href="{{url_for('static',filename='images/thelogo.png')}}">  
+
   </head>
-  <body>
-    {% include 'navbar.html'%}	
     
+  <body>
+    {% include 'navbar.html'%}  
     <div>
   		{% block content %}
   		{% endblock%}
