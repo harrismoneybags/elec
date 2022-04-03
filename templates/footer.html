@@ -1,7 +1,46 @@
-<footer class="footer mt-auto py-3 footer-expand-lg  bg-light d-flex flex-row bd-highlight mb-3">
-  <div class="container p-2 bd-highlight">
-    <a class="icon-insta" href="https://www.instagram.com/harris_electrical97">
-      <img src="{{url_for('static',filename='images/insta.png')}}" alt="" height="25" width="25">
-    </a>
-  </div>
-</footer>
+<style type="text/css">
+  
+  .footer{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color:#2C3539 ;
+    justify-content: space-around;
+    min-height: 4vh;
+  }
+
+
+  .icon-socials li{
+    padding-top: 1vh;
+    list-style: none;
+  }
+
+  .icon-socials{
+    display: inline-flex;
+    width: 30%;
+    justify-content: space-around;
+  }
+
+</style>
+
+
+
+<div class="footer">
+  <ul class="icon-socials" >
+      <li>
+        <a class="icon-insta" href="https://www.instagram.com/harris_electrical97">
+        <img src="{{url_for('static',filename='images/insta.png')}}" alt="" height="25" width="25">
+       </a>
+      </li>
+      <li>
+        <a class="icon-facebook" href="https://www.facebook.com/harriselectrical97">
+          <img src="{{url_for('static',filename='images/facebook.png')}}" alt="" height="25" width="25">
+        </a>
+      </li>
+      <li>
+        <a class="icon-twitter" href="https://twitter.com/harris_spark">
+          <img src="{{url_for('static',filename='images/twitter.png')}}" alt="" height="25" width="25">
+        </a>
+      </li>
+  </ul>
+</div>
