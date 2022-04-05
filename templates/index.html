@@ -1,51 +1,95 @@
-{% extends 'base.html'%}
-
-{% block content %}
-
-
-<div class="carousel-inner">
-	<div class="carousel-item active">
-
-		<div class="overlay-image-home" style="background-image: url(static/images/thecover.png);"></div>
-		
-		
-		<div class="container-carouseltext">
-			<h1> Welcome to Harris Electrical Services</h1>
-			<h6> Making your smart home and electrical dreams a reality</h6>
-		</div>
-	</div>
-</div>	
-		
-<br>
-</br>
-
-<div  class="container">
-  <div class="row">
-    <div class="col">
-     <div class="card" style="width: 100%; height: 100%;">
-
-      		<img src="{{url_for('static',filename='images/map.png')}}" class="card-img-top" alt="...">
-      		<div class="card-body">
-      			<h5 class="card-title">Based in Dishforth</h5>
-    			<p class="card-text">Available for callout or appointments</p>
-    			<a href="{{url_for('about') }}#contact" class="btn btn-primary">contact info</a>
-    		</div>
-		</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Harris Electrical</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}" />
+  <link rel="icon" href="{{url_for('static',filename='images/thelogo.png')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container flex">
+      <div class="logo">
+        <a href="{{url_for('index') }}"><img src="{{url_for('static',filename='images/thelogo.png')}}" alt="" height="40px"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{{url_for('index') }}">Home</a></li>
+          <li><a href="{{url_for('about') }}">About</a></li>
+          <li><a href="{{url_for('services') }}">Services</a></li>
+          <li><a href="{{url_for('index') }}">Projects</a></li>
+        </ul>
+      </nav>
+      
     </div>
-    <div class="col">
-    	<div class="card" style="width: 100%; height: 100% px;">
-
-      		<img src="{{url_for('static',filename='images/eicr.jpeg')}}" class="card-img-top" alt="...">
-      		<div class="card-body">
-      			<h5 class="card-title">EICR from £75</h5>
-    			<p class="card-text">Starting at just £70 book yours today!</p>
-    			<a href="{{url_for('services') }}#EICR" class="btn btn-primary">Find out more?</a>
-  			</div>
-		</div>
-    </div>
+    
   </div>
 
+  <!-- Showcase -->
+  <section class="showcase">
+    <div class="container grid">
+      <div class="showcase-text">
+        <h1> Welcome </h1>
+        <p> Here to help you with all your electrical and smart home needs, no job too small</p>
+        <a href="{{url_for('index') }}" class="btn btn-outline"> See more</a>
+      </div>
 
+      <div class="showcase-form card">
+        <h2> Request an EICR </h2>
+        <form>
+          <div class="form-control">
+            <input type="text" name="name" placeholder="Name">
+          </div>
+          <div class="form-control">
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-control">
+            <input type="text" name="phone number" placeholder="Phone number">
+          </div>
+          <div class="form-control">
+            <input type="text" name="details" placeholder="Installation details" required>
+          </div>
+          <input type="submit" value="send" class="btn btn-primary">
+        </form>
+      </div>
+    </div>
+    
+  </section>
 
+  <!-- misc -->
+  <section class="misc">
+    <div class="container">
+      <h3 class="misc-heading text-center my-1">
 
-{% endblock%}
+        Professional testing and high quality instaltation with highend end finish   
+        
+      </h3>
+    </div>
+
+    <div class="grid grid-3 text-center my-4">
+      <div>
+        
+        <h3> EICR </h3>
+        <p> EICR's starting at £75</p>
+      </div>
+      <div>
+        
+        <h3> EICR </h3>
+        <p> EICR's starting at £75</p>
+      </div>
+      <div>
+        
+        <h3> Projects </h3>
+        <p> 1 job compleat</p>
+      </div>
+      
+    </div>
+    
+  </section>
+  
+</body>
+</html>
