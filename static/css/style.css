@@ -93,7 +93,7 @@ img{
 .showcase-form {
 	position: relative;
 	top: 60px;
-	height: 400px;
+	height: 300px;
 	width: 400px;
 	padding: 40px;
 	z-index: 100;
@@ -132,59 +132,39 @@ img{
 
 /*misc*/
 .misc{
+	padding-top: 200px;
+}
+
+.misc-heading{
+	max-width: 500px;
+	margin: auto;
+}
+
+.misc .grid h3{
+	font-size: 35px;
+}
+
+.misc .grid p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/*cli*/
+
+.cli{
 	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
-
-/* Utilities*/
-
-.container{
-	max-width: 1100px;
-	margin: 0 auto;
-	overflow: auto; 
-	padding:0 40px;
+.cli .grid{
+	grid-template-columns: repeat(3, 1fr);
 }
 
-.flex {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
+.cli .grid >:first-child{
+	grid-column: 1 / span 2;
+	grid-row: 1 / span 2;
 }
 
-.grid{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 20px;
-	justify-content: center;
-	align-items: center;
-	height: 100%;
-}
-
-.card{
-	background-color: #fff;
-	color: #333;
+.cli .container img{
 	border-radius: 10px;
-	box-shadow: 0 3px 10px rgb(0, 0, 0.2);
-	padding: 20px;
-	margin: 10px;
-}
-.btn{
-	display: inline-block;
-	padding: 10px 30px;
-	cursor: pointer;
-	background:  var(--primary-color);
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-}
-
-.btn-outline{
-	background-color: transparent;
-	border: 1px #fff solid;
-
-}
-
-.btn:hover{
-	transform: scale(0.95);
 }
