@@ -1,7 +1,113 @@
-{% extends 'base.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Harris Electrical</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/utilities.css')}}" />
 
-{% block content %}
+  <link rel="icon" href="{{url_for('static',filename='images/thelogo.png')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container flex">
+      <div class="logo">
+        <a href="{{url_for('index') }}"><img src="{{url_for('static',filename='images/thelogo.png')}}" alt="" height="40px"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{{url_for('index') }}">Home</a></li>
+          <li><a href="{{url_for('about') }}">About</a></li>
+          <li><a href="{{url_for('services') }}">Services</a></li>
+          <li><a href="{{url_for('projects') }}">Projects</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+    
+  </div>
 
-	<h1>About us !</h1>
+  <!-- about me -->
+  <section class="about-me">
+    <div class="container grid">
+     	<div class="aboutme-text">
+			 <h1> About me and Harris electrical </h1>
+			 <p> started harris in 2022, currently serving full time in the armed forces. I take immense pride in my work, punctual, profinal and honest any work carried out by me will be done in a timely manner and finished to a high standard and at a reasonable price.   </p>
+		</div>
 
-{% endblock%}
+      <div class="about-pic card">
+		  <img src="{{url_for('static',filename='images/me.jpg')}}" >
+        
+      </div>
+    </div>
+    
+  </section>
+
+<!-- Location-->
+<section class="location">
+	<div class="container grid">
+		<img src="{{url_for('static',filename='images/map.png')}}">
+		<div class="card">
+			<p>Orginally from sheffield (occanainaly availbale for work there)Based at dishforth and covering over the  broughbridge, ripon, harrogate and thirsk area </p>
+		</div>
+
+	</div>
+</section>
+
+<!--contact me-->
+
+<section class="contact-info">
+  <div class="container">
+    <h3 class="misc-heading text-center my-1">
+     Professional testing and high quality instaltation with highend end finish
+    </h3>
+    <div class="grid grid-3 text-center my-4">
+      <div>
+        <h3> Phone </h3>
+        <p class="text-secondary"> 07951597002</p>
+        
+      </div>
+      <div>
+        <h3> Email </h3>
+        <p class="text-secondary"> harriselectricalservices00@gmail.com</p>
+        
+      </div>
+      
+    </div>
+  </div> 
+</section>
+<!--footer-->
+
+<footer class="footer py-5">
+	<div class="container grid grid-3">
+		<div>
+			<h1>Harris Electrical sercvices</h1>
+			<p>Copyright &copy;2022 </p>
+		</div>
+		<div class="social">
+      <ul>
+				<a class="icon-facebook" href="https://www.facebook.com/harriselectrical97">
+          <img src="{{url_for('static',filename='images/facebook.png')}}">
+        </a>
+      </ul>
+      <ul>
+        <a class="icon-insta" href="https://www.instagram.com/harris_electrical97">
+        	<img src="{{url_for('static',filename='images/insta.png')}}">
+       	</a>
+      </ul>
+      <ul>	
+        <a class="icon-twitter" href="https://twitter.com/harris_spark">
+          <img src="{{url_for('static',filename='images/twitter.png')}}">
+        </a>
+      </ul>
+		</div>
+	</div>
+	</footer>
+
+  
+</body>
+</html>

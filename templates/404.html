@@ -1,10 +1,79 @@
-{% extends 'base.html'%}
 
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Harris Electrical</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/utilities.css')}}" />
 
-	<br/>
-	<center>
-		<h1>404 page not found</h1>
-	</center>
+  <link rel="icon" href="{{url_for('static',filename='images/thelogo.png')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container flex">
+      <div class="logo">
+        <a href="{{url_for('index') }}"><img src="{{url_for('static',filename='images/thelogo.png')}}" alt="" height="40px"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{{url_for('index') }}">Home</a></li>
+          <li><a href="{{url_for('about') }}">About</a></li>
+          <li><a href="{{url_for('services') }}">Services</a></li>
+          <li><a href="{{url_for('index') }}">Projects</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+    
+  </div>
 
-{% endblock%}
+	<br>
+  <center>
+    <div class="error-text" >
+      <h1>Error 404</h1>
+      <h3>page not found</h3> 
+      <ul>
+        <a href="{{url_for('index') }}" class="btn btn-primary"> Home </a>
+      </ul>
+    </div>
+  </center>
+  <br>
+  
+<!--footer -->
+
+<footer class="footer py-5">
+	<div class="container grid grid-3">
+		<div>
+			<h1>Harris Electrical sercvices</h1>
+			<p>Copyright &copy;2022 </p>
+		</div>
+		<div class="social">
+      <ul>
+				<a class="icon-facebook" href="https://www.facebook.com/harriselectrical97">
+          <img src="{{url_for('static',filename='images/facebook.png')}}">
+        </a>
+      </ul>
+      <ul>
+        <a class="icon-insta" href="https://www.instagram.com/harris_electrical97">
+        	<img src="{{url_for('static',filename='images/insta.png')}}">
+       	</a>
+      </ul>
+      <ul>	
+        <a class="icon-twitter" href="https://twitter.com/harris_spark">
+          <img src="{{url_for('static',filename='images/twitter.png')}}">
+        </a>
+      </ul>
+		</div>
+		
+	</div>
+	
+</footer>
+
+  
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="" />
   <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/utilities.css')}}" />
+
   <link rel="icon" href="{{url_for('static',filename='images/thelogo.png')}}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -21,7 +24,7 @@
           <li><a href="{{url_for('index') }}">Home</a></li>
           <li><a href="{{url_for('about') }}">About</a></li>
           <li><a href="{{url_for('services') }}">Services</a></li>
-          <li><a href="{{url_for('index') }}">Projects</a></li>
+          <li><a href="{{url_for('projects') }}">Projects</a></li>
         </ul>
       </nav>
       
@@ -35,7 +38,7 @@
       <div class="showcase-text">
         <h1> Welcome </h1>
         <p> Here to help you with all your electrical and smart home needs, no job too small</p>
-        <a href="{{url_for('index') }}" class="btn btn-outline"> See more</a>
+        <a href="{{url_for('projects') }}" class="btn btn-outline"> See more</a>
       </div>
 
       <div class="showcase-form card">
@@ -64,32 +67,63 @@
   <section class="misc">
     <div class="container">
       <h3 class="misc-heading text-center my-1">
-
-        Professional testing and high quality instaltation with highend end finish   
-        
+       Professional testing and high quality instaltation with highend end finish
       </h3>
-    </div>
-
-    <div class="grid grid-3 text-center my-4">
-      <div>
-        
-        <h3> EICR </h3>
-        <p> EICR's starting at £75</p>
+      <div class="grid grid-3 text-center my-4">
+      	<div>
+      		<h3> EICR </h3>
+        	<p class="text-secondary"> EICR's starting at £75</p>
+        	<a href="{{url_for('services') }}" class="btn btn-primary"> intrested? </a>
+      	</div>
+      	<div>
+      		<h3> Projects </h3>
+        	<p class="text-secondary"> see what weve been upto</p>
+        	<a href="{{url_for('projects') }}" class="btn btn-primary"> here! </a>
+      	</div>
       </div>
-      <div>
-        
-        <h3> EICR </h3>
-        <p> EICR's starting at £75</p>
-      </div>
-      <div>
-        
-        <h3> Projects </h3>
-        <p> 1 job compleat</p>
-      </div>
-      
-    </div>
-    
+  	</div> 
   </section>
+
+<!--cli-->
+<section class="cli">
+	<div class="container grid">
+		<img src="{{url_for('static',filename='images/thecover.png')}}">
+		<div class="card">
+			<h3> 18th Edition, 2391-52 Test and inspection </h3>
+		</div>
+	</div>
+</section>
+
+<!--footer -->
+
+<footer class="footer py-5">
+	<div class="container grid grid-3">
+		<div>
+			<h1>Harris Electrical sercvices</h1>
+			<p>Copyright &copy;2022 </p>
+		</div>
+		<div class="social">
+      <ul>
+				<a class="icon-facebook" href="https://www.facebook.com/harriselectrical97">
+          <img src="{{url_for('static',filename='images/facebook.png')}}">
+        </a>
+      </ul>
+      <ul>
+        <a class="icon-insta" href="https://www.instagram.com/harris_electrical97">
+        	<img src="{{url_for('static',filename='images/insta.png')}}">
+       	</a>
+      </ul>
+      <ul>	
+        <a class="icon-twitter" href="https://twitter.com/harris_spark">
+          <img src="{{url_for('static',filename='images/twitter.png')}}">
+        </a>
+      </ul>
+		</div>
+		
+	</div>
+	
+</footer>
+
   
 </body>
 </html>
