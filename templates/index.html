@@ -24,7 +24,7 @@
           <li><a href="{{url_for('index') }}">Home</a></li>
           <li><a href="{{url_for('about') }}">About</a></li>
           <li><a href="{{url_for('services') }}">Services</a></li>
-          <li><a href="{{url_for('index') }}">Projects</a></li>
+          <li><a href="{{url_for('projects') }}">Projects</a></li>
         </ul>
       </nav>
       
@@ -38,7 +38,7 @@
       <div class="showcase-text">
         <h1> Welcome </h1>
         <p> Here to help you with all your electrical and smart home needs, no job too small</p>
-        <a href="{{url_for('index') }}" class="btn btn-outline"> See more</a>
+        <a href="{{url_for('projects') }}" class="btn btn-outline"> See more</a>
       </div>
 
       <div class="showcase-form card">
@@ -78,7 +78,7 @@
       	<div>
       		<h3> Projects </h3>
         	<p class="text-secondary"> see what weve been upto</p>
-        	<a href="{{url_for('index') }}" class="btn btn-primary"> here! </a>
+        	<a href="{{url_for('projects') }}" class="btn btn-primary"> here! </a>
       	</div>
       </div>
   	</div> 
@@ -94,6 +94,35 @@
 	</div>
 </section>
 
+<!--footer -->
+
+<footer class="footer py-5">
+	<div class="container grid grid-3">
+		<div>
+			<h1>Harris Electrical sercvices</h1>
+			<p>Copyright &copy;2022 </p>
+		</div>
+		<div class="social">
+      <ul>
+				<a class="icon-facebook" href="https://www.facebook.com/harriselectrical97">
+          <img src="{{url_for('static',filename='images/facebook.png')}}">
+        </a>
+      </ul>
+      <ul>
+        <a class="icon-insta" href="https://www.instagram.com/harris_electrical97">
+        	<img src="{{url_for('static',filename='images/insta.png')}}">
+       	</a>
+      </ul>
+      <ul>	
+        <a class="icon-twitter" href="https://twitter.com/harris_spark">
+          <img src="{{url_for('static',filename='images/twitter.png')}}">
+        </a>
+      </ul>
+		</div>
+		
+	</div>
+	
+</footer>
 
   
 </body>

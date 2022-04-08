@@ -93,7 +93,7 @@ img{
 .showcase-form {
 	position: relative;
 	top: 60px;
-	height: 300px;
+	height: 400px;
 	width: 400px;
 	padding: 40px;
 	z-index: 100;
@@ -168,3 +168,125 @@ img{
 .cli .container img{
 	border-radius: 10px;
 }
+/*about me*/
+
+.about-me  .about-pic img{
+	z-index: 100;
+}
+
+.about-me::before,
+.about-me::after{
+	content: '';
+	position: absolute;
+	height: 100px;
+	bottom: -70px;
+	right: 0;
+	left: 0;
+	background: #fff;
+	transform: skewY(-3deg);
+}
+
+.about-me{
+	height: 400px;
+	background-color: var(--primary-color);
+	color: #fff;
+	position: relative;
+	
+}
+
+.about-me .grid{
+	overflow: hidden;
+}
+
+.about-me .aboutme-text{
+	bottom: 200px;
+}
+
+/*location*/
+
+.location {
+	
+	padding-top: 100px;
+}
+
+/*footer*/
+
+.footer{
+	background: var(--primary-color);
+}
+
+
+
+
+.footer .social img{
+	width: 25px;
+	height:25px;
+}
+
+.footer .social .ul{
+	justify-content: space-around;
+}
+
+
+/*tables and under*/
+@media(max-width: 768px){
+	.grid,
+	.showcase .grid,
+	.misc .grid,
+	.cli .grid,
+	.location .grid,
+	.contact-info .grid
+	{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		
+	}
+
+	.showcase{
+		height: auto;
+
+	}
+
+	.showcase-text {
+		text-align: center;
+		margin-top: 40px;
+
+	}
+
+	.showcase-form{
+		justify-self: center;
+		margin: auto;
+	}
+
+	.cli .grid >:first-child{
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.misc .container{
+		justify-self: center;
+	}
+
+
+
+}
+
+/*moble*/
+@media(max-width: 500px) {
+	.navbar{
+		height: 110px;
+	}
+
+	.navbar .flex {
+		flex-direction: column;
+	}
+
+	.navbar ul{
+		padding: 10px;
+		background-color: rgb(0, 0, 0.1) ;
+		border-radius: 10px;
+
+	}
+
+}
+

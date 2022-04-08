@@ -1,40 +1,94 @@
-{% extends 'base.html'%}
 
-{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Harris Electrical</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}" />
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/utilities.css')}}" />
 
-<div id="outdoor lights" style="padding: 50px;">
-	<div class="card border-black w-100 ">
-		<img src="{{url_for('static',filename='images/placeholder1024x451.png')}}" class="card-img" alt="..." style="max-height: 300px;">
-		<div class="card-body text-black card-img-overlay">
-  			<h5 class="card-title"> Out door ligting </h5>
-    		<p class="card-text"> Using qauilty accesories made from durable matirals you'll be left with an installation that will stand the test of time,and will look amzing doing it !</p>
-  		</div>
+  <link rel="icon" href="{{url_for('static',filename='images/thelogo.png')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="container flex">
+      <div class="logo">
+        <a href="{{url_for('index') }}"><img src="{{url_for('static',filename='images/thelogo.png')}}" alt="" height="40px"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="{{url_for('index') }}">Home</a></li>
+          <li><a href="{{url_for('about') }}">About</a></li>
+          <li><a href="{{url_for('services') }}">Services</a></li>
+          <li><a href="{{url_for('index') }}">Projects</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+    
+  </div>
+
+  <!--Eicr-->
+
+  <section class="eicr">
+	  <div class="container grid">
+		  <div class="eicr-text">
+			  <h1>Electrical Installation Condition Report</h1>
+			  <p>
+				The Electrical Installation Condition Report (EICR), is a series of tests that are carried out to test the electrical health of your home, flat or business. starting at £75 (£60 per consumer unit and £15 per circuit there after).
+
+				It's a legal requirement that the landlord has an EICR carried out every change of occupant, special rates can be established for customers that need multiple EICR completing or will be a repeat customer.
+				
+				The Report will be given to the client upon the completion of a visual inspection and set of strenuous tests that will result in a pass or remedial work that will need to be carried out within the 28 days period after the test has been carried out.
+				
+			  </p>
+		  </div>
+	  </div>
+  </section>
+<!--outdoor lights-->
+  <section class="outdoor-lights">
+	  
+
+  </section>
+
+
+ 
+
+<!--footer -->
+
+<footer class="footer py-5">
+	<div class="container grid grid-3">
+		<div>
+			<h1>Harris Electrical sercvices</h1>
+			<p>Copyright &copy;2022 </p>
+		</div>
+		<div class="social">
+      <ul>
+				<a class="icon-facebook" href="https://www.facebook.com/harriselectrical97">
+          <img src="{{url_for('static',filename='images/facebook.png')}}">
+        </a>
+      </ul>
+      <ul>
+        <a class="icon-insta" href="https://www.instagram.com/harris_electrical97">
+        	<img src="{{url_for('static',filename='images/insta.png')}}">
+       	</a>
+      </ul>
+      <ul>	
+        <a class="icon-twitter" href="https://twitter.com/harris_spark">
+          <img src="{{url_for('static',filename='images/twitter.png')}}">
+        </a>
+      </ul>
+		</div>
+		
 	</div>
-</div>
+	
+</footer>
 
-<div id="EICR" style="padding: 50px;">
-	<div class="card border-black w-100 ">
-		<img src="{{url_for('static',filename='images/placeholder1024x451.png')}}" class="card-img" alt="..." style="max-height: 300px;">
-		<div class="card-body text-black card-img-overlay">
-  			<h5 class="card-title"> EICR </h5>
-    		<p class="card-text"> The Electrical Installation Condition Report  or the EICR  is a certificate that details the condition of all the electrical installations and fittings in a property. The report is produced following an in-depth assessment carried out by a qualified electrician. A visual inspection of the installation is done and series of tests are complated to confirm that everything is functioning safely and is compliant with minimum regulatory standards. Where the electrician identifies any potentially hazardous defects, they will note this in the report with the appropriate recommendation code and advise the landlord of any required remedial work. The certificate will also list the date by which the next inspection is due.</p>
+  
+</body>
+</html>
 
-    		<p > Prices start at £60 per consumer unit and the £15 per circuit. </p>
-  		</div>
-	</div>
-</div>
-
-<div id="consumer unit upgrades" style="padding: 50px;">
-	<div class="card border-black w-100 ">
-		<img src="{{url_for('static',filename='images/placeholder1024x451.png')}}" class="card-img" alt="..." style="max-height: 300px;">
-		<div class="card-body text-black card-img-overlay">
-  			<h5 class="card-title"> Consumer unit upgrades</h5>
-    		<p class="card-text"> while its not law have to upgrade your plastic consumer unit to a meatal one it's stronglry advised that you do,  </p>
-  		</div>
-	</div>
-</div>
-
-
-
-
-{% endblock%}
