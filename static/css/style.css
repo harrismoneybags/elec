@@ -49,6 +49,7 @@ img{
 	background-color: var(--primary-color);
 	color: #fff;
 	height: 70px;
+	
 }
 
 .navbar ul {
@@ -166,6 +167,7 @@ img{
 
 .cli .grid{
 	grid-template-columns: repeat(3, 1fr);
+	
 }
 
 .cli .grid >:first-child{
@@ -176,6 +178,8 @@ img{
 .cli .container img{
 	border-radius: 10px;
 }
+
+
 /*about me*/
 
 .about-me  .about-pic img{
@@ -195,7 +199,7 @@ img{
 }
 
 .about-me{
-	height: 400px;
+	height: auto;
 	background-color: var(--primary-color);
 	color: #fff;
 	position: relative;
@@ -203,11 +207,16 @@ img{
 }
 
 .about-me .grid{
-	overflow: hidden;
+	overflow: visible;
 }
 
 .about-me .aboutme-text{
 	bottom: 200px;
+}
+
+.contact-info .grid img{
+	width: 50%;
+	height: 50%;
 }
 
 /*location*/
@@ -273,6 +282,11 @@ img{
 
 	.misc .container{
 		justify-self: center;
+	}
+
+
+	.about-me{
+		height: 500px;
 	}
 
 
