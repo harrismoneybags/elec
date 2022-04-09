@@ -49,6 +49,7 @@ img{
 	background-color: var(--primary-color);
 	color: #fff;
 	height: 70px;
+	
 }
 
 .navbar ul {
@@ -149,6 +150,17 @@ img{
 	font-weight: bold;
 }
 
+<<<<<<< HEAD
+=======
+.misc .container img{
+	width: 50%;
+	height: 50%;
+	justify-self: center;
+}
+
+.misc-text
+
+>>>>>>> 62af34fe9d33401413989ecb80982f1d06635281
 /*cli*/
 
 .cli{
@@ -158,6 +170,10 @@ img{
 
 .cli .grid{
 	grid-template-columns: repeat(3, 1fr);
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 62af34fe9d33401413989ecb80982f1d06635281
 }
 
 .cli .grid >:first-child{
@@ -168,6 +184,11 @@ img{
 .cli .container img{
 	border-radius: 10px;
 }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 62af34fe9d33401413989ecb80982f1d06635281
 /*about me*/
 
 .about-me  .about-pic img{
@@ -187,11 +208,16 @@ img{
 }
 
 .about-me{
+<<<<<<< HEAD
 	height: 400px;
+=======
+	height: auto;
+>>>>>>> 62af34fe9d33401413989ecb80982f1d06635281
 	background-color: var(--primary-color);
 	color: #fff;
 	position: relative;
 	
+<<<<<<< HEAD
 }
 
 .about-me .grid{
@@ -268,6 +294,115 @@ img{
 	}
 
 
+=======
+}
+
+.about-me .grid{
+	overflow: visible;
+}
+>>>>>>> 62af34fe9d33401413989ecb80982f1d06635281
+
+.about-me .aboutme-text{
+	bottom: 200px;
+}
+
+<<<<<<< HEAD
+/*moble*/
+@media(max-width: 500px) {
+	.navbar{
+		height: 110px;
+	}
+
+	.navbar .flex {
+		flex-direction: column;
+	}
+
+	.navbar ul{
+		padding: 10px;
+		background-color: rgb(0, 0, 0.1) ;
+		border-radius: 10px;
+
+	}
+
+}
+
+=======
+.contact-info .grid img{
+	width: 50%;
+	height: 50%;
+}
+
+/*location*/
+
+.location {
+	
+	padding-top: 100px;
+}
+
+/*footer*/
+
+.footer{
+	background: var(--primary-color);
+}
+
+
+
+
+.footer .social img{
+	width: 25px;
+	height:25px;
+}
+
+.footer .social .ul{
+	justify-content: space-around;
+}
+
+
+/*tables and under*/
+@media(max-width: 768px){
+	.grid,
+	.showcase .grid,
+	.misc .grid,
+	.cli .grid,
+	.location .grid,
+	.contact-info .grid
+	{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		
+	}
+
+	.showcase{
+		height: auto;
+
+	}
+
+	.showcase-text {
+		text-align: center;
+		margin-top: 40px;
+
+	}
+
+	.showcase-form{
+		justify-self: center;
+		margin: auto;
+	}
+
+	.cli .grid >:first-child{
+		grid-column: 1;
+		grid-row: 1;
+	}
+
+	.misc .container{
+		justify-self: center;
+	}
+
+
+	.about-me{
+		height: 500px;
+	}
+
+
 
 }
 
@@ -288,5 +423,36 @@ img{
 
 	}
 
+	.showcase-text{
+		padding: 10px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.showcase-form{
+	
+		width: 300px;
+		height:auto;
+	}
+
+	.misc .container {
+		text-align: center;
+	}
+
+	.misc .container img{
+		justify-self: center;
+		width: 250px;
+		height: 250px;
+	}
+
+	.misc .btn {
+		justify-self: center;
+	}
+
+	
+
+
+
 }
 
+>>>>>>> 62af34fe9d33401413989ecb80982f1d06635281
