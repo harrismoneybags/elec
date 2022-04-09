@@ -149,6 +149,14 @@ img{
 	font-weight: bold;
 }
 
+.misc .container img{
+	width: 50%;
+	height: 50%;
+	justify-self: center;
+}
+
+.misc-text
+
 /*cli*/
 
 .cli{
@@ -287,6 +295,36 @@ img{
 		border-radius: 10px;
 
 	}
+
+	.showcase-text{
+		padding: 10px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+
+	.showcase-form{
+	
+		width: 300px;
+		height:auto;
+	}
+
+	.misc .container {
+		text-align: center;
+	}
+
+	.misc .container img{
+		justify-self: center;
+		width: 250px;
+		height: 250px;
+	}
+
+	.misc .btn {
+		justify-self: center;
+	}
+
+	
+
+
 
 }
 
