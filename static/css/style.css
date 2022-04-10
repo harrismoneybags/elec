@@ -150,8 +150,6 @@ img{
 	font-weight: bold;
 }
 
-<<<<<<< HEAD
-=======
 .misc .container img{
 	width: 50%;
 	height: 50%;
@@ -160,7 +158,6 @@ img{
 
 .misc-text
 
->>>>>>> 62af34fe9d33401413989ecb80982f1d06635281
 /*cli*/
 
 .cli{
@@ -170,10 +167,7 @@ img{
 
 .cli .grid{
 	grid-template-columns: repeat(3, 1fr);
-<<<<<<< HEAD
-=======
 	
->>>>>>> 62af34fe9d33401413989ecb80982f1d06635281
 }
 
 .cli .grid >:first-child{
@@ -184,11 +178,8 @@ img{
 .cli .container img{
 	border-radius: 10px;
 }
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 62af34fe9d33401413989ecb80982f1d06635281
 /*about me*/
 
 .about-me  .about-pic img{
@@ -208,16 +199,12 @@ img{
 }
 
 .about-me{
-<<<<<<< HEAD
 	height: 400px;
-=======
 	height: auto;
->>>>>>> 62af34fe9d33401413989ecb80982f1d06635281
 	background-color: var(--primary-color);
 	color: #fff;
 	position: relative;
 	
-<<<<<<< HEAD
 }
 
 .about-me .grid{
@@ -294,19 +281,16 @@ img{
 	}
 
 
-=======
 }
 
 .about-me .grid{
 	overflow: visible;
 }
->>>>>>> 62af34fe9d33401413989ecb80982f1d06635281
 
 .about-me .aboutme-text{
 	bottom: 200px;
 }
 
-<<<<<<< HEAD
 /*moble*/
 @media(max-width: 500px) {
 	.navbar{
@@ -326,7 +310,6 @@ img{
 
 }
 
-=======
 .contact-info .grid img{
 	width: 50%;
 	height: 50%;
@@ -455,4 +438,3 @@ img{
 
 }
 
->>>>>>> 62af34fe9d33401413989ecb80982f1d06635281

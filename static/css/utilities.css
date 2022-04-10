@@ -29,13 +29,10 @@
 	grid-template-columns: repeat(3, 1fr);
 }
 
-<<<<<<< HEAD
-=======
 .grid-4{
 	grid-template-columns: repeat(4, 1fr);
 }
 
->>>>>>> 62af34fe9d33401413989ecb80982f1d06635281
 .card{
 	background-color: #fff;
 	color: #333;
