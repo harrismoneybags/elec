@@ -300,12 +300,22 @@ img{
 }
 
 .outdoor-lights .container{
-	background: url("/images/Eicr2.JPG") no-repeat ;
+	background: url("/images/outdoor.jpeg") no-repeat ;
 	box-sizing: border-box;
 	box-shadow: inset -350px 0 100px 0 #FFF;
 
 }
 
+.non-notifiable .container{
+	background-color: var(--primary-color);
+	color: #fff;
+
+}
+
+.non-notifiable .grid-3 img{
+	width: 25%;
+	height: 25%;
+}
 
 /*moble*/
 @media(max-width: 500px) {
@@ -327,8 +337,8 @@ img{
 }
 
 .contact-info .grid img{
-	width: 50%;
-	height: 50%;
+	width: 25%;
+	height: 25%;
 }
 
 /*location*/
