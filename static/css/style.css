@@ -299,22 +299,20 @@ img{
 	bottom: 200px;
 }
 
-.outdoor-lights .container{
-	background: url("/images/outdoor.jpeg") no-repeat ;
-	box-sizing: border-box;
-	box-shadow: inset -350px 0 100px 0 #FFF;
+/*non-notifable*/
 
+.non-notifiable.container {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
-.non-notifiable .container{
-	background-color: var(--primary-color);
-	color: #fff;
-
+.non-notifiable-text .grid-3 {
+    display: flex;
 }
 
-.non-notifiable .grid-3 img{
-	width: 25%;
-	height: 25%;
+.non-notifiable-text img {
+    width: 10%;
 }
 
 /*moble*/
