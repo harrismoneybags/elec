@@ -199,8 +199,7 @@ img{
 }
 
 .about-me{
-	height: 400px;
-	height: auto;
+	height: 550px;
 	background-color: var(--primary-color);
 	color: #fff;
 	position: relative;
@@ -283,6 +282,15 @@ img{
 
 }
 
+.about-me img {
+	position: relative;
+	height: 600px;
+	width: 500px;
+	padding: 10px;
+	z-index: 100;
+	justify-self: flex-end;
+}
+
 .about-me .grid{
 	overflow: visible;
 }
@@ -290,6 +298,14 @@ img{
 .about-me .aboutme-text{
 	bottom: 200px;
 }
+
+.outdoor-lights .container{
+	background: url("/images/Eicr2.JPG") no-repeat ;
+	box-sizing: border-box;
+	box-shadow: inset -350px 0 100px 0 #FFF;
+
+}
+
 
 /*moble*/
 @media(max-width: 500px) {
