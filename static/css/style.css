@@ -247,7 +247,8 @@ img{
 	.misc .grid,
 	.cli .grid,
 	.location .grid,
-	.contact-info .grid
+	.contact-info .grid,
+	.non-notifiable-text .grid .grid-3
 	{
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
