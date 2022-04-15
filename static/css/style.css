@@ -305,14 +305,18 @@ img{
     text-align: center;
     background-color: var(--primary-color);
     color: #fff;
+	max-width: 100%;
 }
 
 .non-notifiable-text .grid-3 {
-    display: flex;
+	display: inline-flex;
+	gap: 30px;
 }
 
-.non-notifiable-text img {
-    width: 10%;
+
+
+.non-notifiable-text .grid-3 img {
+    width: 50px;
 }
 
 /*moble*/
@@ -372,7 +376,11 @@ img{
 	.misc .grid,
 	.cli .grid,
 	.location .grid,
-	.contact-info .grid
+	.contact-info .grid,
+	.about-me .grid,
+	.eicr .grid,
+	.non-notifiable .grid
+	
 	{
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
